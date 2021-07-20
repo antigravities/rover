@@ -1,7 +1,7 @@
 let regices = [
-    /^https?\:\/\/(?:store\.steampowered\.com|steamdb\.info|steamcommunity\.com)\/app\/(\d{1,6})/, // Steam Store, Steam Community, SteamDB
-    /^https?\:\/\/s\.team\/a\/(\d{1,6})\/?$/, // s.team
-    /^(\d{1,6})$/ // plain appID
+    /^https?\:\/\/(?:store\.steampowered\.com|steamdb\.info|steamcommunity\.com)\/app\/(\d{1,7})/, // Steam Store, Steam Community, SteamDB
+    /^https?\:\/\/s\.team\/a\/(\d{1,7})\/?$/, // s.team
+    /^(\d{1,7})$/ // plain appID
 ];
 
 module.exports = function parseApp(appString){

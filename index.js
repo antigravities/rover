@@ -59,7 +59,7 @@ async function scanApps(){
     for( let app of apps ){
         if( ! res[app._id] || ! res[app._id].success ) continue;
 
-        if( res[app._id].data && res[app._id].data.price_overview && res[app._id].data.discount_percent !== app.discount_percent ){
+        if( res[app._id].data && res[app._id].data.price_overview && res[app._id].data.price_overview.discount_percent !== app.discount_percent ){
             app.discount_percent = res[app._id].data.price_overview.discount_percent;
 
             if( app.discount_percent > 0 ){
